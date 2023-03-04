@@ -56,7 +56,7 @@ def validate_people(people):
 def save_to_sqs(city_name,cuisine,people,time,number,date):
     
     sqs_client = boto3.client('sqs')
-    queue_url = "https://sqs.us-east-1.amazonaws.com/501390506509/diningqueue"
+    queue_url = "https://sqs.us-east-1.amazonaws.com/304550935268/Q1"
 
     response = sqs_client.send_message(
         QueueUrl=queue_url,
